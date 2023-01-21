@@ -12,13 +12,13 @@ export default function App() {
     return newDice;
   }
 
-  const diceNumbers = diceState.map((num, index) => {
-    return <DieComponent value={num} key={index} />;
-  });
+  const diceElements = diceState.map((num, index) => (
+    <DieComponent value={num} key={index} />
+  ));
 
   return (
     <main>
-      <div className="dice-container">{diceNumbers}</div>
+      <div className="dice-container">{diceElements}</div>
     </main>
   );
 }
