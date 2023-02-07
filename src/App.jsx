@@ -5,7 +5,7 @@ import DieComponent from "./components/DieComponent";
 
 export default function App() {
   const [diceState, setDiceState] = useState(allNewDice());
-  const [tenzies, setTenzies] = useState(true);
+  const [tenzies, setTenzies] = useState(false);
 
   useEffect(() => {
     const allHeld = diceState.every((diceState) => diceState.isHeld);
